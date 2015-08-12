@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+after_success:
+- npm run coveralls
+env:
+  global:
+    secure: dkwDcMX/H7Z4Whp5wvkQKB8ig8apVpNM0+QeIfQ1WmxsYEv4kyo0abAsf386tHoZ/bqz9PyffKcLwYt7QlSfeyyD8FOjM8uPwNn8k5cGbtxcgmVrJvaBq3hcbQ9r86HwP/hOHKxDY9KOIbXBTJi3KroZcCuYi6qNRQ2rweX3DGU=

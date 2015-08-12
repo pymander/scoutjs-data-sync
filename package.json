@@ -1,0 +1,33 @@
+{
+  "name": "npm-orchestrate",
+  "version": "0.1.0",
+  "description": "Sync the NPM registry's metadata with Orchestrate",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^0.9.0",
+    "follow": "^0.11.2",
+    "npm-normalize": "^0.2.3",
+    "orchestrate": "^0.4.7"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.1",
+    "jscoverage": "^0.5.4",
+    "jshint": "^2.5.2",
+    "mocha": "^1.20.1",
+    "mocha-lcov-reporter": "0.0.1"
+  },
+  "scripts": {
+    "test": "npm run jshint && npm run cov && npm run mocha",
+    "mocha": "./node_modules/.bin/mocha test -R spec",
+    "cov": "./node_modules/.bin/jscoverage lib lib-cov",
+    "html-cov": "npm run cov && ./node_modules/.bin/mocha test -R html-cov > coverage.html",
+    "coveralls": "npm run cov && ./node_modules/.bin/mocha test -R mocha-lcov-reporter | ./node_modules/.bin/coveralls",
+    "jshint": "./node_modules/.bin/jshint bin lib test",
+    "start": "./bin/index.js"
+  },
+  "bin": {
+    "npm-orchestrate": "./bin/index.js"
+  },
+  "author": "Max Thayer <garbados@gmail.com>",
+  "license": "ASLv2"
+}
