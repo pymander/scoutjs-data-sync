@@ -33,7 +33,7 @@
     "html-cov": "npm run cov && ./node_modules/.bin/mocha test -R html-cov > coverage.html",
     "coveralls": "npm run cov && ./node_modules/.bin/mocha test -R mocha-lcov-reporter | ./node_modules/.bin/coveralls",
     "jshint": "./node_modules/.bin/jshint bin lib test",
-    "start": "./bin/index.js"
+    "start": "node ./bin/index.js"
   },
   "bin": {
     "npf-npm-sync": "./bin/index.js"
