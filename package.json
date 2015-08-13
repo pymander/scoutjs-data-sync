@@ -27,16 +27,7 @@
     "nock": "^2.10.0"
   },
   "scripts": {
-    "test": "npm run jshint && npm run cov && npm run mocha",
-    "mocha": "./node_modules/.bin/mocha test -R spec",
-    "cov": "./node_modules/.bin/jscoverage lib lib-cov",
-    "html-cov": "npm run cov && ./node_modules/.bin/mocha test -R html-cov > coverage.html",
-    "coveralls": "npm run cov && ./node_modules/.bin/mocha test -R mocha-lcov-reporter | ./node_modules/.bin/coveralls",
-    "jshint": "./node_modules/.bin/jshint bin lib test",
-    "start": "node ./bin/index.js"
-  },
-  "bin": {
-    "npf-npm-sync": "./bin/index.js"
+    "start": "node ./lib/index.js"
   },
   "author": "Asa Miller <asa@asamiller.com>",
   "license": "MIT"
