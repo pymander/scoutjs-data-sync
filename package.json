@@ -27,7 +27,7 @@
     "nock": "^2.10.0"
   },
   "scripts": {
-    "start": "node ./lib/index.js"
+    "start": "node index.js"
   },
   "author": "Asa Miller <asa@asamiller.com>",
   "license": "MIT"
