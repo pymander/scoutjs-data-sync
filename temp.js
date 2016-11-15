@@ -13,7 +13,6 @@ var ITEMS = [
 	{id: 'async',        repo: 'caolan/async'},
 	{id: 'react-native', repo: 'facebook/react-native'},
 	{id: 'react',        repo: 'facebook/react'},
-	{id: 'orchestrate',  repo: 'orchestrate-io/orchestrate.js'},
 	{id: 'lodash',       repo: 'lodash/lodash'},
 	{id: 'jquery',       repo: 'jquery/jquery'},
 	{id: 'hapi',         repo: 'hapijs/hapi'},
